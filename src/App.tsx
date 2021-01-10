@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {FiArrowRight} from 'react-icons/fi';
+
 import './styles/global.css';
 import './styles/pages/landing.css';
 
@@ -9,7 +11,7 @@ function App() {
   return (
     <div id="page-landing">
       <div className="content-wrapper">
-        
+
         <img src={logoImg} alt="happy-logo"/>
 
         <main>
@@ -22,7 +24,9 @@ function App() {
           <span>Maranhão</span>
         </div>
 
-        <a href="#" className="enter-app"> O </a>
+        <a href="#" className="enter-app"> 
+          <FiArrowRight size={26} color="rgba(0,0,0,0.6)"/>
+        </a>
 
       </div>
     </div>
