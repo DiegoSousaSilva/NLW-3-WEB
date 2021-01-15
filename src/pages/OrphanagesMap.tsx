@@ -8,14 +8,9 @@ import Leaflet from 'leaflet';
 
 import '../styles/pages/orphanages-map.css';
 import 'leaflet/dist/leaflet.css';
+import mapIcon from '../utils/mapIcon';
 
-const mapIcon = Leaflet.icon({
-  iconUrl: markerMapImg,
 
-  iconSize: [38, 48],
-  iconAnchor: [19, 48],
-  popupAnchor: [170, 2],
-})
 
 const OrphanagesMap = ()=>{
   return(
@@ -48,16 +43,16 @@ const OrphanagesMap = ()=>{
           icon= {mapIcon}
           position={[-5.5132955,-47.4645257]}
         >
-          <Popup closeButton={false} minWidth={240} maxWidth={300} className="map-popup">
+          <Popup closeButton={false} minWidth={240} maxWidth={240} className="map-popup">
             Lar das crianças peculiares
-            <Link to="">
+            <Link to="/orphanages/1">
               <FiArrowRight size={20} color="#000"/>
             </Link>
           </Popup>   
         </Marker>  
       </MapContainer>
 
-      <Link to="/app" className="create-orphanage"> 
+      <Link to="/orphanages/create" className="create-orphanage"> 
         <FiPlus size={32} color="#fff"/>
       </Link>
     </div>
