@@ -4,10 +4,8 @@ import {FiPlus, FiArrowRight} from 'react-icons/fi';
 import { MapContainer,TileLayer, Marker, Popup} from 'react-leaflet';
 import { Link } from 'react-router-dom';
 import markerMapImg from '../images/map-marker.svg';
-import Leaflet from 'leaflet';
 
 import '../styles/pages/orphanages-map.css';
-import 'leaflet/dist/leaflet.css';
 import mapIcon from '../utils/mapIcon';
 
 
@@ -30,7 +28,6 @@ const OrphanagesMap = ()=>{
       </aside>
 
       <MapContainer 
-      //-5.5132955,-47.4645257
         center={[-5.5132955,-47.4645257]}
         zoom={15}
         maxZoom={18}
@@ -50,11 +47,13 @@ const OrphanagesMap = ()=>{
             </Link>
           </Popup>   
         </Marker>  
+
       </MapContainer>
 
       <Link to="/orphanages/create" className="create-orphanage"> 
         <FiPlus size={32} color="#fff"/>
       </Link>
+
     </div>
   );
 }

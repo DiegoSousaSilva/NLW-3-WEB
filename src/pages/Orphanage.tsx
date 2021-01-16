@@ -7,6 +7,7 @@ import mapIcon from "../utils/mapIcon";
 
 import '../styles/pages/orphanage.css';
 import Sidebar from "../components/Sidebar";
+import { Link } from "react-router-dom";
 
 
 export default function Orphanage() {
@@ -61,7 +62,7 @@ export default function Orphanage() {
               </MapContainer>
 
               <footer>
-                <a href="">Ver rotas no Google Maps</a>
+                <Link to="#">Ver rotas no Google Maps</Link>
               </footer>
             </div>
 
@@ -78,7 +79,7 @@ export default function Orphanage() {
               </div>  
 
             </div>
-
+ .
             <button type="button" className="contact-button">
               <FaWhatsapp size={20} color="#FFF" />
               Entrar em contato
