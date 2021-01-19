@@ -7,6 +7,7 @@
 }
 
 #page-map aside{
+  position: relative;
   width: 440px;
   background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7) 100%;
   padding: 80px;
@@ -41,21 +42,21 @@
 #page-map .create-orphanage{
   position: absolute;
   right: 40px;
-  bottom: 40px;
+  bottom:40px;
 
   width: 64px;
   height: 64px;
-  background: #15c3d6;
+  background: #156;
   border-radius: 28px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 8.2s;
+  transition: all 2s;
 }
 
 #page-map .create-orphanage:hover {
-  background-color: #17d6eb;
+  background-color: #1c9dec;
 }
 
 #page-map .map-popup .leaflet-popup-content-wrapper{
